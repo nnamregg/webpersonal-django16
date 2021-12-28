@@ -3,17 +3,61 @@
 {% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
 {% block header %}
     <h1>Acerca de</h1>
-    <span class="subheading">Biografía</span>
+    <span class="subheading text-mono">Biografía</span>
 {% endblock header %}
 {% block content %}
 <div class="row">
     <div class="col-lg-3 col-md-4 offset-lg-1">
-        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+        <img class="img-fluid avatar shadow" src="{% static 'core/img/avatar.jpg' %}" alt="">
     </div>
     <div class="col-lg-7 col-md-8">
-        <h2 class="section-heading">Cosmo Kramer</h2>   
+        <h1 class="section-heading text-mono">Cosmo Kramer</h1>   
         <p>A lovable rogue, his trademarks include his upright hairstyle and vintage wardrobe, whose combination led Elaine to characterize him as a "hipster doofus"; his taste in fresh fruit; love of occasional smoking, Cuban cigars in particular; bursts through Jerry's apartment door without even bothering to knock first; frequent pratfalls and penchant for nonsensical, percussive outbursts of noise to indicate skepticism, agreement, irritation and a variety of other feelings.</p>
         <p>He has been described as "an extraordinary cross between Eraserhead and Herman Munster". Kramer appeared in all but two episodes: "The Chinese Restaurant" and "The Pen", in the second and third seasons, respectively.</p>
+    </div>
+</div>
+<div class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">What I do</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <i class="fa fa-balance-scale fa-2x" aria-hidden="true"></i>
+            </div>
+            <div>
+                <h2>Featured title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
+                    and probably just keep going until we run out of words.</p>
+                <a href="#" class="btn btn-primary">
+                    Try!
+                </a>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
+            </div>
+            <div>
+                <h2>Featured title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
+                    and probably just keep going until we run out of words.</p>
+                <a href="#" class="btn btn-primary">
+                    Do!
+                </a>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <i class="fa fa-bomb fa-2x" aria-hidden="true"></i>
+            </div>
+            <div>
+                <h2>Featured title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
+                    and probably just keep going until we run out of words.</p>
+                <a href="#" class="btn btn-primary">
+                    Buy!
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}

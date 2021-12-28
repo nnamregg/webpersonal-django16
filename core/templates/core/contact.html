@@ -3,15 +3,59 @@
 {% block background %}{% load static %}{% static 'core/img/contact-bg.jpg' %}{% endblock %}
 {% block header %}
     <h1>Contacto</h1>
-    <span class="subheading">Escribime</span>
+    <span class="subheading text-mono">Escribime</span>
 {% endblock header %}
 {% block content %}
+
 <div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-        <br>
-        <p><b>Teléfono:</b> +54 11 5555 5656</p>
-        <p><b>Honorarios:</b> 1BTC/h (precio base)</p>
-    </div>
-</div   
+    <form id="formulario" action="/" method="">
+        <div class="row">
+            <div class="form-group col-12 col-lg-6">
+                <input type="text" name="nombre" id="nombre" required>
+                <span class="bar"></span>
+                <label for="nombre">Nombre</label>
+                <p></p>
+            </div>
+
+            <div class="form-group col-12 col-lg-6">
+                <input type="text" name="apellido" id="apellido" required>
+                <span class="bar"></span>
+                <label for="apellido">Apellido</label>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-12 col-lg-6">
+                <input type="text" name="email" id="email" required>
+                <span class="bar"></span>
+                <label for="email">Email</label>
+                <p></p>
+            </div>
+
+            <div class="form-group col-12 col-lg-6">
+                <input type="text" name="tel" id="tel" required>
+                <span class="bar"></span>
+                <label for="tel">Teléfono</label>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <textarea name="msg" id="msg" rows="8" cols="35" required></textarea><label for="msg">Mensaje</label>
+                <span class="bar"></span>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-btn-box">
+                <button type="submit" class="form-btn form-btn-submit" formnovalidate>ENVIAR</button>
+                <button class="form-btn form-btn-reset">CANCELAR</button>
+            </div>
+        </div>
+
+    </form>
+</div>
 {% endblock %}

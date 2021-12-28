@@ -4,27 +4,55 @@
 
 {% block header %}
     <h1>Portfolio</h1>
-    <span class="subheading">Currículum</span>
+    <span class="subheading text-mono">Currículum</span>
 {% endblock header %}
 
 {% block content %}
 
+<div class="row row-cols-1 row-cols-lg-3 g-5 mx-auto">
     {% for project in projects %}
 
-    <div class="row project">
+        <div class="col">
+            <div class="card shadow h-100">
+                <img src="{{project.image.url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fs-3 text-mono">{{project.title}}</h5>
+                    {% if project.description|length > 120 %}
+                        <p class="card-text mt-3">{{project.description | slice:"120"}}...</p>
+                    {% else %}
+                        <p class="card-text mt-3">{{project.description}}</p>
+                    {% endif %}
+                </div>
+
+                {% if project.link %}
+                    <div class="card-body d-flex flex-column justify-content-end">
+                        <a href="{{project.link}}" class="card-link text-reset" target="_blank">Más información</a>
+                    </div>
+                {% endif %}
+
+                <div class="card-footer">   
+                    <p class="card-text"><small class="text-muted">Última actualización: {{project.updated}}</small></p>
+                </div>
+
+            </div>
+        </div>  
+
+    {% endfor %}
+</div>
+    {% comment %} <div class="row project">
         <!-- Proyectos -->
-        <div class="col-lg-3 col-md-4 offset-lg-1">
-            <img class="img-fluid" src="{{project.image.url}}" alt="">
+        <div class="col-md-4">
+            <img class="img-thumbnail" src="{{project.image.url}}" alt="">
         </div>
-        <div class="col-lg-7 col-md-8">
-            <h2 class="section-heading title">{{project.title}}</h2>   
+        <div class="col-md-8">
+            <h2 class="section-heading title text-mono">{{project.title}}</h2>   
             <p>{{project.description}}</p>
             {% if project.link %}
             <p><a href="{{project.link}}" target="_blank">Más información</a></p>
             {% endif %}
         </div>
-    </div>
+    </div> {% endcomment %}
 
-    {% endfor %}
+    
 
 {% endblock %}
