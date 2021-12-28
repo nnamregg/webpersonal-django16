@@ -9,5 +9,5 @@ Proyecto Backend desarrollado en Django Framework para CodoACodo 4.0
 ## Requirements
 
 - Pillow = 8.4.0
-- django = 3.2.9
+- django = 3.2.10
 - django-ckeditor = 5.4.0
