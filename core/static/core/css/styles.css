@@ -1,0 +1,262 @@
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.text-mono {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+}
+
+#navbar {
+    transition: transform ease-in .2s, background-color ease-in .2s;
+    -webkit-transition: transform ease-in .2s, background-color ease-in .2s;
+    -moz-transition: transform ease-in .2s, background-color ease-in .2s;
+    -o-transition: transform ease-in .2s, background-color ease-in .2s;
+}
+
+#navbarLogo {
+    transition: transform linear .15s;
+    -webkit-transition: transform linear .15s;
+    -moz-transition: transform linear .15s;
+    -o-transition: transform linear .15s;
+} 
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.card-cover {
+    background-size: cover;
+    background-position: center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+
+header.masthead {
+    background-attachment:fixed;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+
+header.masthead .site-heading {
+    padding:400px 0 150px;
+    color:#fff;
+}
+
+header.masthead .site-heading h1 {
+    text-align: center;
+    font-size:4rem;
+    margin-top:0;
+}
+
+.subheading, header.masthead .site-heading .subheading {
+    text-align: center;
+    font-weight:400;
+    line-height:1.1;
+    display:block;
+    margin:10px 0 0;
+}
+
+@media only screen and (min-width:768px) {
+    header.masthead .site-heading { padding:350px 0 }
+    
+    header.masthead .site-heading h1 { 
+        font-size:5rem;
+        margin-top:0;
+    }
+
+    .subheading, header.masthead .site-heading .subheading {
+        font-size:24px;
+        font-weight:300;
+        line-height:1.1;
+        display:block;
+        margin:10px 0 0;
+    }
+}
+
+.footer-contact {
+    display: grid !important;
+    grid-template-columns: 1fr 2fr;
+}
+
+.btn {
+    width: fit-content;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 1rem;
+}
+
+.section-heading {
+    font-size: 3.2rem;
+    font-weight:700;
+    margin:30px 0 20px;
+}
+
+.avatar {
+    width:100%;
+    border-radius: 50%;
+    margin-top:20px;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 400px;
+}
+
+.card-link {
+    font-size: small;
+}
+
+/* Form */
+
+#formulario {
+    width: 100%;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    background: none;
+    font-size: 1.1em;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #6c757d;
+    color: #212529;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    color: #6c757d;
+    font-size: 16px;
+    position: absolute;
+    pointer-events: none;
+    left:10px;
+    top: 10px;
+    transition: 300ms ease all;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+input:is(:focus, :valid)~label {
+    color: darkgray;
+    top: -14px;
+    font-size: .8em;
+}
+
+input:focus~.bar::before {
+    width: 100%;
+}
+
+textarea:is(:focus, :valid)~label {
+    color: darkgray;
+    top: -14px;
+    font-size: .8em;
+}
+
+textarea:focus~.bar::before {
+    width: 100%;
+}
+
+.form-group {
+    position: relative;
+    margin: 1.2rem 0;
+}
+
+.form-group p {
+    visibility: hidden;
+    font-size: .85em;
+    position: absolute;
+    right: 15px;
+    margin-top: 5px;
+}
+
+.form-group.falla p {
+    visibility: visible;
+    color: #dc3545;
+    font-weight: 500;
+}
+
+.form-group.ok label {
+    color: #198754;
+    font-weight: 500;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar::before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #0dcaf0;
+    transition: 300ms ease;
+}
+
+.form-btn-box {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-btn {
+    color: #fff;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    width: 49%;
+    padding: 10px 20px;
+    border-radius: 3px;
+    letter-spacing: 0.06em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.form-btn:hover {
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
+}
+
+.form-btn-submit {
+    background: #212529;
+}
+
+.form-btn-reset {
+    background: #6c757d;
+}
+
+.form-btn-submit:hover {
+    filter: saturate(120%);
+}
+
+.form-btn-reset:hover {
+    filter: brightness(0.9);
+}
+
+@media only screen and (min-width:992px) {
+    .card-img-top {
+        height: 350px;
+    }
+
+    #formulario {
+        width: 50%;
+    }
+}
