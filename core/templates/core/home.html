@@ -7,69 +7,77 @@
 {% endblock header %}
 {% block content %}
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
         <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url({% static 'core/img/home-bagel-1.jpg' %});">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Bagel</h2>
-                    <ul class="d-flex list-unstyled mt-auto">
+            <div class="card h-100 bg-dark text-white border-0 rounded-3 shadow-lg">
+                <img src="{% static 'core/img/home-bagel-1.jpg' %}" class="card-img" alt="Bagel">
+                <div class="card-img-overlay p-5 d-flex flex-column justify-content-between">
+                    <h2 class="card-title fw-bold" style="font-size:3rem">Bagel</h2>
+                    <p class="card-text">This is a wider card.</p>
+                    <ul class="d-flex justify-content-between list-unstyled mt-auto">
                         <li class="me-auto">
-                            <img src="{% load static %}{% static 'core/img/bagel-ico.png' %}" alt="Palta" width="26" height="26" class="rounded-circle border border-white">
+                            <img src="{% static 'core/img/bagel-ico.png' %}" alt="Bagel" width="26" height="26" class="rounded-circle border border-white">
                         </li>
                         <li class="d-flex align-items-center me-3">
-                            <i class="fa fa-thumb-tack mx-2" aria-hidden="true"></i>
-                            <small class="text-mono">Out of this world</small>
+                            <i class="fas fa-thumbtack me-2"></i> 
+                            <small class="text-mono">Here</small>
                         </li>
-                        <li class="d-flex align-items-center me-3">
-                            <i class="fa fa-calendar mx-2" aria-hidden="true"></i>
-                            <small class="text-mono">3d</small>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-calendar-alt me-2"></i>
+                            <small class="text-mono">2d</small>
                         </li>
                     </ul>
-                </div>    
+                </div>
+            </div>
+        </div>
+            
+        <div class="col">
+            <div class="card bg-dark text-white border-0 rounded-3 shadow-lg">
+                <img src="{% static 'core/img/home-bagel-2.jpg' %}" class="card-img" alt="Bagel">
+                <div class="card-img-overlay p-5 d-flex flex-column justify-content-between">
+                    <h2 class="card-title fw-bold" style="font-size:3rem">Bagel</h2>
+                    <p class="card-text">This is a wider card.</p>
+                    <ul class="d-flex justify-content-between list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{% static 'core/img/bagel-ico.png' %}" alt="Bagel" width="26" height="26" class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <i class="fas fa-thumbtack me-2"></i> 
+                            <small class="text-mono">Here</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-calendar-alt me-2"></i>
+                            <small class="text-mono">2d</small>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url({% static 'core/img/home-bagel-2.jpg' %});">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Beygl</h2>
-                    <ul class="d-flex list-unstyled mt-auto">
+            <div class="card h-100 bg-dark text-white border-0 rounded-3 shadow-lg">
+                <img src="{% static 'core/img/home-bagel-3.jpg' %}" class="card-img" alt="Bagel">
+                <div class="card-img-overlay p-5 d-flex flex-column justify-content-between">
+                    <h2 class="card-title fw-bold" style="font-size:3rem">Bagel</h2>
+                    <p class="card-text">This is a wider card.</p>
+                    <ul class="d-flex justify-content-between list-unstyled mt-auto">
                         <li class="me-auto">
-                            <img src="{% load static %}{% static 'core/img/bagel-ico.png' %}" alt="Palta" width="26" height="26" class="rounded-circle border border-white">
-                        </li>
-                        <li class="d-flex align-items-center me-3 text-shadow">
-                            <i class="fa fa-thumb-tack mx-2" aria-hidden="true"></i>
-                            <small class="text-mono">Earth</small>
+                            <img src="{% static 'core/img/bagel-ico.png' %}" alt="Bagel" width="26" height="26" class="rounded-circle border border-white">
                         </li>
                         <li class="d-flex align-items-center me-3">
-                            <i class="fa fa-calendar mx-2" aria-hidden="true"></i>
-                            <small class="text-mono">3d</small>
+                            <i class="fas fa-thumbtack me-2"></i> 
+                            <small class="text-mono">Here</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-calendar-alt me-2"></i>
+                            <small class="text-mono">2d</small>
                         </li>
                     </ul>
-                </div>    
+                </div>
             </div>
-        </div>
-
-        <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image:linear-gradient(0deg, rgba(2,0,36,0.8) 0%, rgba(0,212,255,0.2) 100%), url({% static 'core/img/home-bagel-3.jpg' %});">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Bajgiel</h2>
-                    <ul class="d-flex list-unstyled mt-auto">
-                        <li class="me-auto">
-                            <img src="{% load static %}{% static 'core/img/bagel-ico.png' %}" alt="Palta" width="26" height="26" class="rounded-circle border border-white">
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                            <i class="fa fa-thumb-tack mx-2" aria-hidden="true"></i>
-                            <small class="text-mono">Earth</small>
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                            <i class="fa fa-calendar mx-2" aria-hidden="true"></i>
-                            <small class="text-mono">3d</small>
-                        </li>
-                    </ul>
-                </div>    
-            </div>
-        </div>
-
+        </div>   
+            
     </div>
+
     
 {% endblock %}

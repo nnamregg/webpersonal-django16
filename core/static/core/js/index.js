@@ -50,18 +50,25 @@ window.addEventListener('load', () => {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
+        cleanForm();
         validaCampos();
     })
 
-    resetBtn.addEventListener('click', () => {
+    const cleanForm = () => {
         const okClass = document.querySelectorAll('.ok');
         const fallaClass = document.querySelectorAll('.falla');
         okClass.forEach((el) => {
+            console.log('okClass: ' + okClass)
             el.classList.remove('ok');
         });
         fallaClass.forEach((el) => {
+            console.log('fallaClass: ' + fallaClass)
             el.classList.remove('falla');
         });
+    }
+
+    resetBtn.addEventListener('click', () => {
+        cleanForm();
         form.reset();
     })
 
@@ -118,11 +125,12 @@ window.addEventListener('load', () => {
         const formControl = input.parentElement;
         const aviso = formControl.querySelector('p');
         aviso.innerText = msje;
-
+        console.log(aviso)
         formControl.classList.add('falla');
     }
     const validaOk = (input, msje) => {
         const formControl = input.parentElement;
+        console.log(formControl)
         formControl.classList.add('ok');
     }
 
