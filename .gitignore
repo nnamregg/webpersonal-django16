@@ -1,3 +1,7 @@
+# Media
+media/projects/
+!media/projects/.keep
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
