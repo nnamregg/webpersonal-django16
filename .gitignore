@@ -129,5 +129,4 @@ dmypy.json
 .pyre/
 
 # media
-media/projects/*.jpg
-media/projects/*.jpeg
+media/projects/
