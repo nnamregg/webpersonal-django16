@@ -2,7 +2,7 @@
 
 Proyecto Backend desarrollado en Django Framework para CodoACodo 4.0
 
-**[DEMO](https://www.nnamregg.pythonanywhere.com/)**
+**[DEMO](https://nnamregg.pythonanywhere.com/)**
 
 ----------
 
